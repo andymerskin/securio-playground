@@ -16,7 +16,7 @@ declare module 'react' {
     css?: CSSInterpolation
   }
   // The inline svg css prop
-  interface SVGProps<T> extends SVGProps<SVGSVGElement> {
+  interface TwinSVGProps<T> extends SVGProps<SVGSVGElement> {
     css?: CSSInterpolation
   }
 }
