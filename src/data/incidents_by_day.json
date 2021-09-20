@@ -1,0 +1,842 @@
+[
+  {
+    "day": 1,
+    "incidents": {
+      "count": 17,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 5
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 16
+        },
+        {
+          "type": "App Installs",
+          "percentage": 14
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 17
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 15
+        }
+      ]
+    }
+  },
+  {
+    "day": 2,
+    "incidents": {
+      "count": 27,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 5
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 1
+        },
+        {
+          "type": "App Installs",
+          "percentage": 18
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 4
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 10
+        }
+      ]
+    }
+  },
+  {
+    "day": 3,
+    "incidents": {
+      "count": 36,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 20
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 7
+        },
+        {
+          "type": "App Installs",
+          "percentage": 13
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 9
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 1
+        }
+      ]
+    }
+  },
+  {
+    "day": 4,
+    "incidents": {
+      "count": 65,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 9
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 2
+        },
+        {
+          "type": "App Installs",
+          "percentage": 7
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 7
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 8
+        }
+      ]
+    }
+  },
+  {
+    "day": 5,
+    "incidents": {
+      "count": 71,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 1
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 8
+        },
+        {
+          "type": "App Installs",
+          "percentage": 10
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 8
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 5
+        }
+      ]
+    }
+  },
+  {
+    "day": 6,
+    "incidents": {
+      "count": 82,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 3
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 8
+        },
+        {
+          "type": "App Installs",
+          "percentage": 16
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 2
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 9
+        }
+      ]
+    }
+  },
+  {
+    "day": 7,
+    "incidents": {
+      "count": 14,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 15
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 3
+        },
+        {
+          "type": "App Installs",
+          "percentage": 0
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 3
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 7
+        }
+      ]
+    }
+  },
+  {
+    "day": 8,
+    "incidents": {
+      "count": 25,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 17
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 16
+        },
+        {
+          "type": "App Installs",
+          "percentage": 1
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 15
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 11
+        }
+      ]
+    }
+  },
+  {
+    "day": 9,
+    "incidents": {
+      "count": 53,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 12
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 0
+        },
+        {
+          "type": "App Installs",
+          "percentage": 11
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 19
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 18
+        }
+      ]
+    }
+  },
+  {
+    "day": 10,
+    "incidents": {
+      "count": 53,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 0
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 15
+        },
+        {
+          "type": "App Installs",
+          "percentage": 17
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 0
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 7
+        }
+      ]
+    }
+  },
+  {
+    "day": 11,
+    "incidents": {
+      "count": 97,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 8
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 16
+        },
+        {
+          "type": "App Installs",
+          "percentage": 7
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 14
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 17
+        }
+      ]
+    }
+  },
+  {
+    "day": 12,
+    "incidents": {
+      "count": 85,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 20
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 7
+        },
+        {
+          "type": "App Installs",
+          "percentage": 8
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 8
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 14
+        }
+      ]
+    }
+  },
+  {
+    "day": 13,
+    "incidents": {
+      "count": 55,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 9
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 4
+        },
+        {
+          "type": "App Installs",
+          "percentage": 8
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 1
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 6
+        }
+      ]
+    }
+  },
+  {
+    "day": 14,
+    "incidents": {
+      "count": 99,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 10
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 10
+        },
+        {
+          "type": "App Installs",
+          "percentage": 16
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 18
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 9
+        }
+      ]
+    }
+  },
+  {
+    "day": 15,
+    "incidents": {
+      "count": 86,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 7
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 1
+        },
+        {
+          "type": "App Installs",
+          "percentage": 13
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 2
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 1
+        }
+      ]
+    }
+  },
+  {
+    "day": 16,
+    "incidents": {
+      "count": 91,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 10
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 17
+        },
+        {
+          "type": "App Installs",
+          "percentage": 1
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 16
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 0
+        }
+      ]
+    }
+  },
+  {
+    "day": 17,
+    "incidents": {
+      "count": 65,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 13
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 8
+        },
+        {
+          "type": "App Installs",
+          "percentage": 16
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 20
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 2
+        }
+      ]
+    }
+  },
+  {
+    "day": 18,
+    "incidents": {
+      "count": 87,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 16
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 11
+        },
+        {
+          "type": "App Installs",
+          "percentage": 17
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 12
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 3
+        }
+      ]
+    }
+  },
+  {
+    "day": 19,
+    "incidents": {
+      "count": 96,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 10
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 16
+        },
+        {
+          "type": "App Installs",
+          "percentage": 0
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 9
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 0
+        }
+      ]
+    }
+  },
+  {
+    "day": 20,
+    "incidents": {
+      "count": 86,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 1
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 8
+        },
+        {
+          "type": "App Installs",
+          "percentage": 8
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 2
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 20
+        }
+      ]
+    }
+  },
+  {
+    "day": 21,
+    "incidents": {
+      "count": 53,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 20
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 20
+        },
+        {
+          "type": "App Installs",
+          "percentage": 4
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 13
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 4
+        }
+      ]
+    }
+  },
+  {
+    "day": 22,
+    "incidents": {
+      "count": 23,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 16
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 0
+        },
+        {
+          "type": "App Installs",
+          "percentage": 0
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 0
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 1
+        }
+      ]
+    }
+  },
+  {
+    "day": 23,
+    "incidents": {
+      "count": 64,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 10
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 3
+        },
+        {
+          "type": "App Installs",
+          "percentage": 6
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 11
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 15
+        }
+      ]
+    }
+  },
+  {
+    "day": 24,
+    "incidents": {
+      "count": 33,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 17
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 11
+        },
+        {
+          "type": "App Installs",
+          "percentage": 0
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 0
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 5
+        }
+      ]
+    }
+  },
+  {
+    "day": 25,
+    "incidents": {
+      "count": 42,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 15
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 7
+        },
+        {
+          "type": "App Installs",
+          "percentage": 8
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 8
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 10
+        }
+      ]
+    }
+  },
+  {
+    "day": 26,
+    "incidents": {
+      "count": 46,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 11
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 8
+        },
+        {
+          "type": "App Installs",
+          "percentage": 0
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 14
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 20
+        }
+      ]
+    }
+  },
+  {
+    "day": 27,
+    "incidents": {
+      "count": 38,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 9
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 1
+        },
+        {
+          "type": "App Installs",
+          "percentage": 3
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 6
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 8
+        }
+      ]
+    }
+  },
+  {
+    "day": 28,
+    "incidents": {
+      "count": 80,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 7
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 12
+        },
+        {
+          "type": "App Installs",
+          "percentage": 5
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 16
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 17
+        }
+      ]
+    }
+  },
+  {
+    "day": 29,
+    "incidents": {
+      "count": 4,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 11
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 3
+        },
+        {
+          "type": "App Installs",
+          "percentage": 13
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 12
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 9
+        }
+      ]
+    }
+  },
+  {
+    "day": 30,
+    "incidents": {
+      "count": 43,
+      "categories": [
+        {
+          "type": "Phishing",
+          "percentage": 20
+        },
+        {
+          "type": "Malicious Site Visits",
+          "percentage": 16
+        },
+        {
+          "type": "App Installs",
+          "percentage": 11
+        },
+        {
+          "type": "Weak Password",
+          "percentage": 1
+        },
+        {
+          "type": "Public Network Connections",
+          "percentage": 17
+        }
+      ]
+    }
+  }
+]
