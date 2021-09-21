@@ -14,7 +14,7 @@ type Props = {
   [rest: string]: any;
 };
 
-export const StackedBarChart = ({ data, xAxis, legend, ...props }: Props) => {
+export const StackedBarChart = ({ data, xAxis, legend, barWidth, ...props }: Props) => {
   const { width, padding } = props;
 
   return (
@@ -34,12 +34,18 @@ export const StackedBarChart = ({ data, xAxis, legend, ...props }: Props) => {
         />
         <VictoryAxis
           dependentAxis
+          style={{
+            axis: {
+              stroke: 'none'
+            }
+          }}
         />
         <VictoryStack>
           { data.map((data, i) => (
             <VictoryBar
               key={i}
               data={data}
+              barWidth={barWidth}
             />
           )) }
         </VictoryStack>

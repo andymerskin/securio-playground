@@ -13,15 +13,30 @@ export const uniqueCategories = uniq(
   )
 ).sort();
 
-export const incidentsByDay = (days: number = defaultDays) => {
-  return uniqueCategories.map(category => 
-    data.slice(Math.max(data.length - days, 0)).map(item => ({
-      x: item.day,
-      y: item.incidents.categories
-        .find(_category => _category.type === category)
-          ?.percentage
-    }))
-  )
+export const selectCategories = uniqueCategories.map(category => {
+  return {
+    value: category,
+    title: category,
+  };
+});
+
+console.log({selectCategories});
+
+
+export const incidentsByDay = (
+  days: number = defaultDays,
+  categoryFilter: Array<string> = uniqueCategories
+) => {
+  return uniqueCategories
+    .filter(category => categoryFilter.includes(category))
+    .map(category => 
+      data.slice(Math.max(data.length - days, 0)).map(item => ({
+        x: item.day,
+        y: item.incidents.categories
+          .find(_category => _category.type === category)
+            ?.percentage
+      }))
+    )
 };
 
 export const legend = uniqueCategories.map(category => ({

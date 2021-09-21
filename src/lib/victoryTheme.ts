@@ -4,29 +4,18 @@ import { theme } from "twin.macro";
 // *
 // * Colors
 // *
-const yellow200 = "#FFF59D";
-const deepOrange600 = "#F4511E";
-const lime300 = "#DCE775";
-const lightGreen500 = "#8BC34A";
-const teal700 = "#00796B";
-const cyan900 = "#006064";
-const colors = [
-  deepOrange600,
-  yellow200,
-  lime300,
-  lightGreen500,
-  teal700,
-  cyan900
+const colorScale = [
+  theme`colors.blueGray.700`,
+  theme`colors.purple.500`,
+  theme`colors.pink.600`,
+  theme`colors.orange.500`,
+  theme`colors.yellow.400`,
 ];
-const blueGrey50 = "#ECEFF1";
-const blueGrey300 = "#90A4AE";
-const blueGrey700 = "#455A64";
-const grey900 = "#212121";
+
 // *
 // * Typography
 // *
 const sansSerif = theme<any>('fontFamily').sans.join(', ');
-
 const letterSpacing = "normal";
 const fontSize = 12;
 // *
@@ -46,7 +35,7 @@ const baseLabelStyles = {
   fontSize,
   letterSpacing,
   padding,
-  fill: blueGrey700,
+  fill: theme`colors.gray.400`,
   stroke: "transparent",
   strokeWidth: 0
 };
@@ -64,7 +53,7 @@ export default {
     {
       style: {
         data: {
-          fill: grey900
+          fill: theme`colors.gray.900`
         },
         labels: baseLabelStyles
       }
@@ -76,7 +65,7 @@ export default {
       style: {
         axis: {
           fill: "transparent",
-          stroke: blueGrey300,
+          stroke: theme`colors.gray.900`,
           strokeWidth: 2,
           strokeLinecap,
           strokeLinejoin
@@ -87,21 +76,21 @@ export default {
         }),
         grid: {
           fill: "none",
-          stroke: blueGrey50,
+          stroke: theme`colors.gray.200`,
           strokeLinecap,
           strokeLinejoin,
           pointerEvents: "painted"
         },
         ticks: {
           fill: "transparent",
-          size: 5,
-          stroke: blueGrey300,
+          size: 0,
+          stroke: theme`colors.gray.300`,
           strokeWidth: 1,
           strokeLinecap,
           strokeLinejoin
         },
         tickLabels: assign({}, baseLabelStyles, {
-          fill: blueGrey700
+          fill: theme`colors.gray.700`
         })
       }
     },
@@ -120,7 +109,7 @@ export default {
     {
       style: {
         data: {
-          fill: blueGrey700,
+          fill: theme`colors.gray.700`,
           padding,
           strokeWidth: 0
         },
@@ -132,15 +121,15 @@ export default {
   boxplot: assign(
     {
       style: {
-        max: { padding, stroke: blueGrey700, strokeWidth: 1 },
+        max: { padding, stroke: theme`colors.gray.700`, strokeWidth: 1 },
         maxLabels: assign({}, baseLabelStyles, { padding: 3 }),
-        median: { padding, stroke: blueGrey700, strokeWidth: 1 },
+        median: { padding, stroke: theme`colors.gray.700`, strokeWidth: 1 },
         medianLabels: assign({}, baseLabelStyles, { padding: 3 }),
-        min: { padding, stroke: blueGrey700, strokeWidth: 1 },
+        min: { padding, stroke: theme`colors.gray.700`, strokeWidth: 1 },
         minLabels: assign({}, baseLabelStyles, { padding: 3 }),
-        q1: { padding, fill: blueGrey700 },
+        q1: { padding, fill: theme`colors.gray.700` },
         q1Labels: assign({}, baseLabelStyles, { padding: 3 }),
-        q3: { padding, fill: blueGrey700 },
+        q3: { padding, fill: theme`colors.gray.700` },
         q3Labels: assign({}, baseLabelStyles, { padding: 3 })
       },
       boxWidth: 20
@@ -151,13 +140,13 @@ export default {
     {
       style: {
         data: {
-          stroke: blueGrey700
+          stroke: theme`colors.gray.700`
         },
         labels: assign({}, baseLabelStyles, { padding: 5 })
       },
       candleColors: {
         positive: "#ffffff",
-        negative: blueGrey700
+        negative: theme`colors.gray.700`
       }
     },
     baseProps
@@ -170,7 +159,7 @@ export default {
         data: {
           fill: "transparent",
           opacity: 1,
-          stroke: blueGrey700,
+          stroke: theme`colors.gray.700`,
           strokeWidth: 2
         },
         labels: baseLabelStyles
@@ -180,7 +169,7 @@ export default {
   ),
   group: assign(
     {
-      colorScale: colors
+      colorScale: colorScale
     },
     baseProps
   ),
@@ -188,8 +177,8 @@ export default {
     {
       style: {
         data: {
-          fill: blueGrey700,
-          stroke: grey900,
+          fill: theme`colors.gray.700`,
+          stroke: theme`colors.gray.900`,
           strokeWidth: 2
         },
         labels: baseLabelStyles
@@ -198,16 +187,16 @@ export default {
     baseProps
   ),
   legend: {
-    colorScale: colors,
+    colorScale: colorScale,
     gutter: 10,
     orientation: "vertical",
     titleOrientation: "top",
     style: {
       data: {
-        type: "circle"
+        type: "circle",
       },
       labels: baseLabelStyles,
-      title: assign({}, baseLabelStyles, { padding: 5 })
+      title: assign({}, baseLabelStyles, { padding: 5 }),
     }
   },
   line: assign(
@@ -216,7 +205,7 @@ export default {
         data: {
           fill: "transparent",
           opacity: 1,
-          stroke: blueGrey700,
+          stroke: theme`colors.gray.700`,
           strokeWidth: 2
         },
         labels: baseLabelStyles
@@ -226,11 +215,11 @@ export default {
   ),
   pie: assign(
     {
-      colorScale: colors,
+      colorScale: colorScale,
       style: {
         data: {
           padding,
-          stroke: blueGrey50,
+          stroke: theme`colors.gray.100`,
           strokeWidth: 1
         },
         labels: assign({}, baseLabelStyles, { padding: 20 })
@@ -242,7 +231,7 @@ export default {
     {
       style: {
         data: {
-          fill: blueGrey700,
+          fill: theme`colors.gray.700`,
           opacity: 1,
           stroke: "transparent",
           strokeWidth: 0
@@ -254,14 +243,14 @@ export default {
   ),
   stack: assign(
     {
-      colorScale: colors
+      colorScale: colorScale
     },
     baseProps
   ),
   tooltip: {
     style: assign({}, baseLabelStyles, { padding: 0, pointerEvents: "none" }),
     flyoutStyle: {
-      stroke: grey900,
+      stroke: theme`colors.gray.900`,
       strokeWidth: 1,
       fill: "#f0f0f0",
       pointerEvents: "none"
@@ -283,7 +272,7 @@ export default {
           pointerEvents: "none"
         }),
         flyout: {
-          stroke: grey900,
+          stroke: theme`colors.gray.900`,
           strokeWidth: 1,
           fill: "#f0f0f0",
           pointerEvents: "none"
