@@ -9,6 +9,9 @@ module.exports = {
       'xl': '1280px',
     },
     extend: {
+      fontFamily: {
+        changa: 'Changa, sans-serif',
+      },
       colors: {
         lime: colors.lime,
         teal: colors.teal,
