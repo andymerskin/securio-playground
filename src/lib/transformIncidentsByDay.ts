@@ -20,8 +20,11 @@ export const selectCategories = uniqueCategories.map(category => {
   };
 });
 
-console.log({selectCategories});
-
+export const incidentsCount = (
+  days: number = defaultDays,
+) => {
+  return data.slice(Math.max(data.length - days, 0)).reduce((prev, next) => prev + next.incidents.count, 0);
+};
 
 export const incidentsByDay = (
   days: number = defaultDays,
