@@ -105,7 +105,15 @@ export const IncidentsChart = ({className}: Props) => {
           domainPadding={40}
         />
       </Card>
-    </div>
-    
+      <div tw="
+        flex
+        justify-end
+        px-3
+        text-sm
+        text-gray-400
+      ">
+        Data prototyped with Mockaroo (<a href="https://www.mockaroo.com/schemas/343388" css={linkCss}>Schema</a>)
+      </div>
+    </div>    
   )
 };
