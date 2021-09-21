@@ -8,6 +8,7 @@ import { days, incidentsByDay, legend, uniqueCategories, incidentsCount } from '
 
 import { StackedBarChart } from "./StackedBarChart";
 import { VictoryLegendProps } from 'victory';
+import { Card } from './Card';
 
 type Props = {
   className?: string;
@@ -74,7 +75,7 @@ export const IncidentsChart = ({className}: Props) => {
         </div>
         <h3 tw="md:text-2xl text-xl">Last {nDays} days</h3>
       </div>
-      <div tw="border border-gray-200 bg-white rounded-lg shadow-lg">
+      <Card>
         <StackedBarChart
           xAxis={xAxis}
           data={data}
@@ -103,7 +104,7 @@ export const IncidentsChart = ({className}: Props) => {
           }}
           domainPadding={40}
         />
-      </div>
+      </Card>
     </div>
     
   )
