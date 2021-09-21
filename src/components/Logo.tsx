@@ -9,6 +9,7 @@ export const Logo = () => {
       text-blue-600
       leading-none
       cursor-pointer
+      select-none
     ">
       securio
     </h1>

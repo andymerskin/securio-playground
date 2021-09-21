@@ -10,12 +10,16 @@ const flex2Css = css`
 export const Header = () => {
   return (
     <header tw="
+      fixed
+      inset-x-0
+      top-0
       flex
       items-center
       h-12
       px-5
       shadow
       bg-white
+      z-50
     ">
       <div tw="flex-1">
         <Logo />

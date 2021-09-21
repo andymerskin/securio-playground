@@ -14,6 +14,7 @@ const Tab = styled.div<{
     whitespace-nowrap
     rounded-full
     cursor-pointer
+    select-none
   `}
 
   ${props => props.active

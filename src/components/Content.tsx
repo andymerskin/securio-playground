@@ -3,7 +3,16 @@ import { IncidentsChart } from "./IncidentsChart"
 
 export const Content = () => {
   return (
-    <div tw="container mx-auto px-5 sm:pt-8 pt-8">
+    <div tw="
+      relative
+      container
+      mx-auto
+      mt-12
+      px-5
+      sm:pt-8
+      pt-8
+      z-10
+    ">
       <IncidentsChart css={tw`pb-40`} />
     </div>
   )
