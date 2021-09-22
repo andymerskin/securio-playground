@@ -32,14 +32,18 @@ export const incidentsByDay = (
 ) => {
   return uniqueCategories
     .filter(category => categoryFilter.includes(category))
-    .map(category => 
-      data.slice(Math.max(data.length - days, 0)).map(item => ({
-        x: item.day,
-        y: item.incidents.categories
+    .map(category => {
+      return data.slice(Math.max(data.length - days, 0)).map(item => {
+        const yValue = item.incidents.categories
           .find(_category => _category.type === category)
-            ?.percentage
-      }))
-    )
+            ?.percentage;
+        return {
+          x: item.day,
+          y: Math.ceil((yValue || 0) / 100 * item.incidents.count),
+          category,
+        }
+      })
+    })
 };
 
 export const legend = uniqueCategories.map(category => ({
