@@ -5,7 +5,7 @@
 # Securio Playground
 > A fake security company delivering all your security needs!
 
-[Live Demo](https://festive-fermat-c91f16.netlify.app/)
+[Live Demo](https://www.andymerskin.com/sites/securio/)
 
 ## Stack
 - Vite
