@@ -1,6 +1,6 @@
-import 'twin.macro';
-import { VictoryBar, VictoryChart, VictoryAxis, VictoryStack, VictoryLegend, VictoryLegendProps } from 'victory';
-import MaterialTheme from '../lib/victoryTheme';
+import { theme } from 'twin.macro';
+import { VictoryBar, VictoryChart, VictoryAxis, VictoryStack, VictoryLegend, VictoryLegendProps, VictoryTooltip, VictoryLabel } from 'victory';
+import victoryTheme from '../lib/victoryTheme';
 
 type Props = {
   data: Array<
@@ -15,13 +15,13 @@ type Props = {
 };
 
 export const StackedBarChart = ({ data, xAxis, legend, barWidth, ...props }: Props) => {
-  const { width, padding } = props;
+  const { width } = props;
 
   return (
     <div>
       <VictoryChart
         height={400}
-        theme={MaterialTheme}
+        theme={victoryTheme}
         {...props}
       >
         <VictoryAxis
@@ -41,11 +41,15 @@ export const StackedBarChart = ({ data, xAxis, legend, barWidth, ...props }: Pro
           }}
         />
         <VictoryStack>
-          { data.map((data, i) => (
+          { data.map((days, i) => (
             <VictoryBar
               key={i}
-              data={data}
+              data={days}
               barWidth={barWidth}
+              labels={({datum}) => `${datum.y} · ${datum.category}`}
+              labelComponent={
+                <VictoryTooltip />
+              }
             />
           )) }
         </VictoryStack>
@@ -55,7 +59,7 @@ export const StackedBarChart = ({ data, xAxis, legend, barWidth, ...props }: Pro
           orientation="horizontal"
           gutter={20}
           width={width}
-          theme={MaterialTheme}
+          theme={victoryTheme}
           {...legend}
         />
       </div>

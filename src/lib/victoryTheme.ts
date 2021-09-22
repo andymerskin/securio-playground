@@ -248,16 +248,26 @@ export default {
     baseProps
   ),
   tooltip: {
-    style: assign({}, baseLabelStyles, { padding: 0, pointerEvents: "none" }),
+    style: assign({}, baseLabelStyles, { 
+      padding: 0,
+      pointerEvents: "none",
+      fill: theme`colors.blueGray.900` as string,
+    }),
     flyoutStyle: {
-      stroke: theme`colors.gray.900`,
+      stroke: theme`colors.blueGray.300`,
       strokeWidth: 1,
-      fill: "#f0f0f0",
+      fill: theme`colors.blueGray.100`,
+      filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))',
       pointerEvents: "none"
     },
-    flyoutPadding: 5,
-    cornerRadius: 5,
-    pointerLength: 10
+    flyoutPadding: {
+      top: 10,
+      bottom: 10,
+      left: 20,
+      right: 20,
+    },
+    cornerRadius: 4,
+    pointerLength: 8
   },
   voronoi: assign(
     {
