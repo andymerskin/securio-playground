@@ -21,7 +21,7 @@ export const Header = () => {
       bg-white
       z-50
     ">
-      <div tw="flex-1">
+      <div tw="flex-1 flex-shrink-0">
         <Logo />
       </div>
       <div tw="flex justify-center items-center" css={flex2Css}>
@@ -37,7 +37,7 @@ export const Header = () => {
           },
         ]} />
       </div>
-      <div tw="flex justify-end items-center flex-1">
+      <div tw="flex justify-end items-center flex-1 flex-shrink-0">
         <NavigationAccount />
       </div>
     </header>
