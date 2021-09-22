@@ -9,8 +9,11 @@ export const Footer = () => {
       inset-x-0
       bottom-0
       flex
-      justify-between
-      items-center
+      flex-col
+      items-start
+      md:flex-row
+      md:justify-between
+      md:items-center
       px-5
       py-5
       text-blueGray-500
@@ -30,6 +33,13 @@ export const Footer = () => {
           </a>
         </div>
       </div>
+      <hr tw="
+        w-3/4
+        h-0.5
+        my-3
+        bg-blueGray-300
+        md:hidden
+      "/>
       <div>© {new Date().getFullYear()} Andy Merskin</div>
     </footer>
   )
