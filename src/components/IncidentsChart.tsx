@@ -2,6 +2,7 @@ import 'twin.macro';
 import { useState } from 'react';
 
 // Lib
+import { nth } from '../lib/utils';
 import { useBreakpoint } from '../lib/useBreakpoint';
 import { linkCss } from './styles';
 import { days, incidentsByDay, legend, uniqueCategories, incidentsCount } from '../lib/transformIncidentsByDay';
@@ -61,6 +62,10 @@ export const IncidentsChart = ({className}: Props) => {
   const xAxis = days(nDays);
   const data = incidentsByDay(nDays, categoryFilter);
 
+  const startDate = days(nDays)[0];
+  const endDate = days(nDays).pop()!;
+  const ordinalDateRange = `${startDate}${nth(startDate)} – ${endDate}${nth(endDate)}`;
+
   return (
     <div tw="space-y-3" className={className}>
       <div tw="flex items-end justify-between px-3">
@@ -73,9 +78,12 @@ export const IncidentsChart = ({className}: Props) => {
             </div>
           </div>
         </div>
-        <h3 tw="md:text-2xl text-xl">Last {nDays} days</h3>
+        <h3 tw="md:text-2xl text-xl">August 2021</h3>
       </div>
       <Card>
+        <div tw="flex items-center h-12 px-5">
+          <span tw="ml-auto">{ordinalDateRange}</span>
+        </div>
         <StackedBarChart
           xAxis={xAxis}
           data={data}
